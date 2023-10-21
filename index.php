@@ -26,6 +26,7 @@
     <li><a href="#">Home</a></li>
     <li><a href="variables">Uso de variables</a></li>
     <li><a href="expresiones-numericas.php">Expresiones numericas</a></li>
+    <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
   </ul>
 
   <h1>Desarrollo Web Entorno Servidor (DWES)</h1>

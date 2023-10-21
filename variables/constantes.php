@@ -15,6 +15,7 @@
       </ul>
     </li>
     <li><a href="../expresiones-numericas.php">Expresiones numericas</a></li>
+    <li><a href="../manejo-de-strings.php">Manejo de Strings</a></li>
   </ul>
 
   <h1>Uso de variables constantes</h1>
@@ -24,7 +25,5 @@
   ?>
 
   <p> <?php echo PI; ?> </p>
-
-  <a href="/">Uso de variables</a>
 </body>
 </html>
