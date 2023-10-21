@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <?php
   // Se puede crear codigo php desde cualquier parte del html
@@ -34,6 +34,8 @@
     echo "<p>Primer argumento</p>", "<p>Segundo argumento</p>";
   ?>
 
-  <?=$greet; echo " otra vez";?>
+  <p> <?=$greet; echo " otra vez";?> </p>
+
+  <a href="variables">Ir a "uso de variables"</a>
 </body>
 </html>
