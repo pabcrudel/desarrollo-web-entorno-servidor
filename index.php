@@ -29,5 +29,9 @@
       echo $greet;
     ?>
   </p>
+
+  <?php
+    echo "<p>Primer argumento</p>", "<p>Segundo argumento</p>";
+  ?>
 </body>
 </html>
