@@ -4,6 +4,10 @@
 <?php
   // Se puede crear codigo php desde cualquier parte del html
   $title = "DWES";
+
+  /* 
+    Esto es un bloque de comentarios 
+  */
   $greet = "Hola desde PHP";
 ?>
 
@@ -12,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
     <?php
-      // Se muestran las variables usando 'echo'
+      # Se muestran las variables usando 'echo'
       echo $title;
     ?>
   </title>
