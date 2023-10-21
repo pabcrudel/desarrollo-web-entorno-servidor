@@ -14,6 +14,7 @@
   <ul>
     <li><a href="./">Home</a></li>
     <li><a href="variables">Uso de variables</a></li>
+    <li><a href="#">Expresiones numericas</a></li>
   </ul>
 
   <h1> <?=$title?> </h1>

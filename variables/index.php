@@ -6,7 +6,16 @@
   <title>Variables</title>
 </head>
 <body>
-  <a href="../">Home</a>
+  <ul>
+    <li><a href="../">Home</a></li>
+    <li>
+      <a href="#">Uso de variables</a>
+      <ul>
+        <li><a href="constantes.php">Constantes</a></li>
+      </ul>
+    </li>
+    <li><a href="../expresiones-numericas.php">Expresiones numericas</a></li>
+  </ul>
 
   <h1>Uso de variables</h1>
 
