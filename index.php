@@ -33,5 +33,7 @@
   <?php
     echo "<p>Primer argumento</p>", "<p>Segundo argumento</p>";
   ?>
+
+  <?=$greet; echo " otra vez";?>
 </body>
 </html>
