@@ -36,6 +36,6 @@
 
   <p> <?=$greet; echo " otra vez";?> </p>
 
-  <a href="variables">Ir a "uso de variables"</a>
+  <a href="variables">Uso de variables</a>
 </body>
 </html>

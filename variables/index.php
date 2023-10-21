@@ -6,6 +6,8 @@
   <title>Variables</title>
 </head>
 <body>
+  <a href="../">Home</a>
+
   <h1>Uso de variables</h1>
 
   <?php
