@@ -18,6 +18,7 @@
       </li>
       <li><a href="../expresiones-numericas.php">Expresiones numericas</a></li>
       <li><a href="../manejo-de-strings.php">Manejo de Strings</a></li>
+      <li><a href="../conversion-de-tipos.php">Conversion de Tipos</a></li>
     </ul>
   </nav>
 
