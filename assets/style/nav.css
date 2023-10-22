@@ -1,0 +1,28 @@
+nav {
+  max-width: 1440px;
+  margin: auto;
+  background: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li:not(:hover) ul {
+  display: none;
+}
+nav li ul {
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}

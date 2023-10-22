@@ -7,14 +7,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?=$title?></title>
+  <link rel="stylesheet" href="assets/style/nav.css">
 </head>
 <body>
-  <ul>
-    <li><a href="./">Home</a></li>
-    <li><a href="variables">Uso de variables</a></li>
-    <li><a href="expresiones-numericas.php">Expresiones numericas</a></li>
-    <li><a href="#">Manejo de Strings</a></li>
-  </ul>
+  <nav>
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li>
+        <a href="variables">Uso de variables</a>
+        <ul>
+          <li><a href="variables/constantes.php">Constantes</a></li>
+        </ul>
+      </li>
+      <li><a href="expresiones-numericas.php">Expresiones numericas</a></li>
+      <li><a href="#">Manejo de Strings</a></li>
+    </ul>
+  </nav>
 
   <h1><?=$title?></h1>
 

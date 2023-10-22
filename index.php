@@ -20,14 +20,22 @@
       echo $title;
     ?>
   </title>
+  <link rel="stylesheet" href="assets/style/nav.css">
 </head>
 <body>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="variables">Uso de variables</a></li>
-    <li><a href="expresiones-numericas.php">Expresiones numericas</a></li>
-    <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
-  </ul>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="variables">Uso de variables</a>
+        <ul>
+          <li><a href="variables/constantes.php">Constantes</a></li>
+        </ul>
+      </li>
+      <li><a href="expresiones-numericas.php">Expresiones numericas</a></li>
+      <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
+    </ul>
+  </nav>
 
   <h1>Desarrollo Web Entorno Servidor (DWES)</h1>
 
