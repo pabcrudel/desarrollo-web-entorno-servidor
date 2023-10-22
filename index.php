@@ -20,36 +20,40 @@
       echo $title;
     ?>
   </title>
-  <link rel="stylesheet" href="assets/style/nav.css">
+  <link rel="stylesheet" href="assets/style/main.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li>
-        <a href="variables">Uso de variables</a>
-        <ul>
-          <li><a href="variables/constantes.php">Constantes</a></li>
-        </ul>
-      </li>
-      <li><a href="expresiones-numericas.php">Expresiones numericas</a></li>
-      <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
-      <li><a href="conversion-de-tipos.php">Conversion de Tipos</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="variables">Uso de variables</a>
+          <ul>
+            <li><a href="variables/constantes.php">Constantes</a></li>
+          </ul>
+        </li>
+        <li><a href="expresiones-numericas.php">Expresiones numericas</a></li>
+        <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
+        <li><a href="conversion-de-tipos.php">Conversion de Tipos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Desarrollo Web Entorno Servidor (DWES)</h1>
-
-  <p>
+  <main>
+    <h1>Desarrollo Web Entorno Servidor (DWES)</h1>
+  
+    <p>
+      <?php
+        echo $greet;
+      ?>
+    </p>
+  
     <?php
-      echo $greet;
+      echo "<p>Primer argumento</p>", "<p>Segundo argumento</p>";
     ?>
-  </p>
-
-  <?php
-    echo "<p>Primer argumento</p>", "<p>Segundo argumento</p>";
-  ?>
-
-  <p> <?=$greet; echo " otra vez";?> </p>
+  
+    <p> <?=$greet; echo " otra vez";?> </p>
+  </main>
 </body>
 </html>

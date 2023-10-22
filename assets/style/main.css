@@ -1,6 +1,9 @@
-nav {
+main, nav {
   max-width: 1440px;
   margin: auto;
+}
+
+nav {
   background: white;
 }
 
@@ -25,4 +28,10 @@ nav li ul {
   position: absolute;
   top: 100%;
   left: 0;
+}
+
+@media (max-width: 1440px) {
+  main, nav {
+    margin: auto 1rem;
+  }
 }

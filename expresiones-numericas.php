@@ -9,46 +9,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> <?=$title?> </title>
-  <link rel="stylesheet" href="assets/style/nav.css">
+  <link rel="stylesheet" href="assets/style/main.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="./">Home</a></li>
-      <li>
-        <a href="variables">Uso de variables</a>
-        <ul>
-          <li><a href="variables/constantes.php">Constantes</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Expresiones numericas</a></li>
-      <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
-      <li><a href="conversion-de-tipos.php">Conversion de Tipos</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li>
+          <a href="variables">Uso de variables</a>
+          <ul>
+            <li><a href="variables/constantes.php">Constantes</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Expresiones numericas</a></li>
+        <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
+        <li><a href="conversion-de-tipos.php">Conversion de Tipos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1> <?=$title?> </h1>
+  <main>
+    <h1> <?=$title?> </h1>
 
-  <?php
-    echo "<h2>Suma de enteros</h2>";
-    $num = 2;
-    $sum = $num + $num;
-    echo "<p>$num + $num = $sum</p>";
+    <?php
+      echo "<h2>Suma de enteros</h2>";
+      $num = 2;
+      $sum = $num + $num;
+      echo "<p>$num + $num = $sum</p>";
 
-    echo "<h2>Expresion compleja</h2>";
-    $complexExp = (($sum - 3) * 4) / 2;
-    echo "<p>(($sum - 3) * 4) / 2 = $complexExp</p>";
+      echo "<h2>Expresion compleja</h2>";
+      $complexExp = (($sum - 3) * 4) / 2;
+      echo "<p>(($sum - 3) * 4) / 2 = $complexExp</p>";
 
-    echo "<h2>Otras formas de hacer operaciones</h2>";
-    $num = 35;
-    echo "<p>$num - 1 = ", $num = $num - 1, "</p>";
+      echo "<h2>Otras formas de hacer operaciones</h2>";
+      $num = 35;
+      echo "<p>$num - 1 = ", $num = $num - 1, "</p>";
 
-    // Las divisiones con 0 generar errores
-    echo "<p>$num / 2 = ", $num /= $num, "</p>";
-    
-    echo "<p>$num + 1 = ", ++$num, "</p>";
-    
-    echo "<p>$num * 5 = ", $num * 5, "</p>";
-  ?>
+      // Las divisiones con 0 generar errores
+      echo "<p>$num / 2 = ", $num /= $num, "</p>";
+      
+      echo "<p>$num + 1 = ", ++$num, "</p>";
+      
+      echo "<p>$num * 5 = ", $num * 5, "</p>";
+    ?>
+  </main>
 </body>
 </html>
