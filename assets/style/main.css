@@ -1,8 +1,8 @@
 body {
   max-width: 1440px;
   margin: 1rem auto;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 30% 1fr;
   gap: 3rem;
 }
 
@@ -18,10 +18,16 @@ header #title {
 
 @media (max-width: 1250px) {
   body {
+    grid-template-columns: 1fr;
     margin: 1rem;
-    flex-direction: column;
+    gap: 1rem;
   }
+
   header {
-    order: 1;
+    grid-row: 2;
+  }
+
+  main {
+    grid-row: 1;
   }
 }
