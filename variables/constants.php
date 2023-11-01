@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator Form</title>
+  <title>Constant variables</title>
   <link rel="stylesheet" href="../assets/style/main.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
       <ul>
         <li><a href="../">Home</a></li>
         <li>
-          <a href="../variables">Variables</a>
+          <a href="./">Variables</a>
           <ul>
-            <li><a href="../variables/constants.php">Constants</a></li>
+            <li><a href="#">Constants</a></li>
           </ul>
         </li>
         <li><a href="../numeric-expressions.php">Numeric expressions</a></li>
@@ -26,8 +26,8 @@
         <li>
           <span>Forms</span>
           <ul>
-            <li><a href="get.html">Get</a></li>
-            <li><a href="#">Post</a></li>
+            <li><a href="../forms/get.html">Get</a></li>
+            <li><a href="../forms/post.html">Post</a></li>
           </ul>
         </li>
       </ul>
@@ -35,22 +35,13 @@
   </header>
 
   <main>
-    <h1>Calculator Form</h1>
+    <h1>Use of Constant variables</h1>
   
-    <form action="result.php" method="POST">
-      <label>Operand 1:</label>
-      <input type="number" name="op1" id="op1" step="0.01" required><br>
-      <label>Operand 2:</label>
-      <input type="number" name="op2" id="op2" step="0.01" required><br>
-      <label>Operator:</label>
-      <select name="operand" id="operand" required>
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-      </select><br>
-      <input type="submit" value="Submit">
-    </form>
+    <?php
+      define("PI", 3.14159);
+    ?>
+  
+    <p> <?php echo PI; ?> </p>
   </main>
 </body>
 </html>

@@ -8,18 +8,28 @@
 </head>
 <body>
   <header>
+    <h4 id="title">Index</h4>
     <nav>
       <ul>
-        <li><a href="../">Home</a></li>
+        <li><a href="./">Home</a></li>
         <li>
-          <a href="#">Uso de variables</a>
+          <a href="#">Variables</a>
           <ul>
-            <li><a href="constantes.php">Constantes</a></li>
+            <li><a href="constants.php">Constants</a></li>
           </ul>
         </li>
-        <li><a href="../expresiones-numericas.php">Expresiones numericas</a></li>
-        <li><a href="../manejo-de-strings.php">Manejo de Strings</a></li>
-        <li><a href="../conversion-de-tipos.php">Conversion de Tipos</a></li>
+        <li><a href="../numeric-expressions.php">Numeric expressions</a></li>
+        <li><a href="../strings-management.php">Strings management</a></li>
+        <li><a href="../types-conversion.php">Types conversion</a></li>
+        <li><a href="../functions.php">Functions</a></li>
+        <li><a href="../loops.php">Loops</a></li>
+        <li>
+          <span>Forms</span>
+          <ul>
+            <li><a href="../forms/get.html">Get</a></li>
+            <li><a href="../forms/post.html">Post</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -28,13 +38,13 @@
     <h1>Uso de variables</h1>
   
     <?php
-      $hora = 12;
-      $minutos = 15;
-      $ciudad = "Sevilla";
-      $texto = "El tren destino $ciudad sale a las $hora:$minutos"
+      $hour = 12;
+      $minute = 15;
+      $city = "Valencia";
+      $text = "The train with destination $city departs at $hour:$minute";
     ?>
   
-    <p> <?=$texto;?> </p>
+    <p> <?=$text;?> </p>
   </main>
 </body>
 </html>

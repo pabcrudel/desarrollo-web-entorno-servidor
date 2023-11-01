@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-  // Variables can ve declared outside <html> tag
-  $title = "Hello PHP";
-  $greet = "Hello from PHP";
-?>
+<?php $title = "Strings management"; ?>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    <?php
-      # Variables can be printed with'echo'
-      echo $title;
-    ?>
-  </title>
+  <title><?=$title?></title>
   <link rel="stylesheet" href="assets/style/main.css">
 </head>
 <body>
@@ -23,7 +14,7 @@
     <h4 id="title">Index</h4>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="./">Home</a></li>
         <li>
           <a href="variables">Variables</a>
           <ul>
@@ -31,7 +22,7 @@
           </ul>
         </li>
         <li><a href="numeric-expressions.php">Numeric expressions</a></li>
-        <li><a href="strings-management.php">Strings management</a></li>
+        <li><a href="#">Strings management</a></li>
         <li><a href="types-conversion.php">Types conversion</a></li>
         <li><a href="functions.php">Functions</a></li>
         <li><a href="loops.php">Loops</a></li>
@@ -47,19 +38,22 @@
   </header>
 
   <main>
-    <h1>Website Development Server Environment</h1>
-  
-    <p>
-      <?php
-        echo $greet;
-      ?>
-    </p>
-  
+    <h1><?=$title?></h1>
+
+    <h2>Assign some text</h2>
     <?php
-      echo "<p>First text</p>", "<p>Second one</p>";
+      $txt = "My string";
+      echo "<p>$txt</p>";
     ?>
-  
-    <p> <?=$greet; echo " again";?> </p>
+
+    <h2>Concatenate strings</h2>
+    <?php
+      $txt = $txt . " concatenated";
+      echo "<p>$txt</p>";
+
+      $txt .= " auto concatenate";
+      echo "<p>$txt</p>";
+    ?>
   </main>
 </body>
 </html>

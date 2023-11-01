@@ -4,23 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator Form</title>
+  <link rel="stylesheet" href="../assets/style/main.css">
 </head>
 <body>
-  <h1>Calculator Form</h1>
+  <header>
+    <h4 id="title">Index</h4>
+    <nav>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li>
+          <a href="../variables">Variables</a>
+          <ul>
+            <li><a href="../variables/constants.php">Constants</a></li>
+          </ul>
+        </li>
+        <li><a href="../numeric-expressions.php">Numeric expressions</a></li>
+        <li><a href="../strings-management.php">Strings management</a></li>
+        <li><a href="../types-conversion.php">Types conversion</a></li>
+        <li><a href="../functions.php">Functions</a></li>
+        <li><a href="../loops.php">Loops</a></li>
+        <li>
+          <span>Forms</span>
+          <ul>
+            <li><a href="#">Get</a></li>
+            <li><a href="post.html">Post</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <form action="result.php" method="GET">
-    <label>Operand 1:</label>
-    <input type="number" name="op1" id="op1" step="0.01" required><br>
-    <label>Operand 2:</label>
-    <input type="number" name="op2" id="op2" step="0.01" required><br>
-    <label>Operator:</label>
-    <select name="operand" id="operand" required>
-      <option value="+">+</option>
-      <option value="-">-</option>
-      <option value="*">*</option>
-      <option value="/">/</option>
-    </select><br>
-    <input type="submit" value="Submit">
-  </form>
+  <main>
+    <h1>Calculator Form</h1>
+  
+    <form action="result.php" method="GET">
+      <label>Operand 1:</label>
+      <input type="number" name="op1" id="op1" step="0.01" required><br>
+      <label>Operand 2:</label>
+      <input type="number" name="op2" id="op2" step="0.01" required><br>
+      <label>Operator:</label>
+      <select name="operand" id="operand" required>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select><br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
 </body>
 </html>

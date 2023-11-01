@@ -13,18 +13,28 @@
 </head>
 <body>
   <header>
+    <h4 id="title">Index</h4>
     <nav>
       <ul>
         <li><a href="./">Home</a></li>
         <li>
-          <a href="variables">Uso de variables</a>
+          <a href="variables">Variables</a>
           <ul>
-            <li><a href="variables/constantes.php">Constantes</a></li>
+            <li><a href="variables/constants.php">Constants</a></li>
           </ul>
         </li>
-        <li><a href="#">Expresiones numericas</a></li>
-        <li><a href="manejo-de-strings.php">Manejo de Strings</a></li>
-        <li><a href="conversion-de-tipos.php">Conversion de Tipos</a></li>
+        <li><a href="#">Numeric expressions</a></li>
+        <li><a href="strings-management.php">Strings management</a></li>
+        <li><a href="types-conversion.php">Types conversion</a></li>
+        <li><a href="functions.php">Functions</a></li>
+        <li><a href="loops.php">Loops</a></li>
+        <li>
+          <span>Forms</span>
+          <ul>
+            <li><a href="forms/get.html">Get</a></li>
+            <li><a href="forms/post.html">Post</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -33,20 +43,20 @@
     <h1> <?=$title?> </h1>
 
     <?php
-      echo "<h2>Suma de enteros</h2>";
+      echo "<h2>Integer addition</h2>";
       $num = 2;
       $sum = $num + $num;
       echo "<p>$num + $num = $sum</p>";
 
-      echo "<h2>Expresion compleja</h2>";
+      echo "<h2>Complex expression</h2>";
       $complexExp = (($sum - 3) * 4) / 2;
       echo "<p>(($sum - 3) * 4) / 2 = $complexExp</p>";
 
-      echo "<h2>Otras formas de hacer operaciones</h2>";
+      echo "<h2>Other way</h2>";
       $num = 35;
       echo "<p>$num - 1 = ", $num = $num - 1, "</p>";
 
-      // Las divisiones con 0 generar errores
+      // Dividing by zero is an error
       echo "<p>$num / 2 = ", $num /= $num, "</p>";
       
       echo "<p>$num + 1 = ", ++$num, "</p>";
