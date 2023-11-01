@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-  $title = "Asignaciones numericas y expresiones";
+  $title = "Numeric expressions";
 ?>
 
 <head>
