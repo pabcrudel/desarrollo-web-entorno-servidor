@@ -11,7 +11,7 @@
     <h4 id="title">Index</h4>
     <nav>
       <ul>
-        <li><a href="./">Home</a></li>
+        <li><a href="../">Home</a></li>
         <li>
           <a href="#">Variables</a>
           <ul>
