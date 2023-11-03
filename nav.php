@@ -46,7 +46,6 @@ function getPath($path) {
       <a href="<?=getPath("types-conversion.php")?>">Types conversion</a>
     </li>
     <li><a href="<?=getPath("functions.php")?>">Functions</a></li>
-    <li><a href="<?=getPath("loops.php")?>">Loops</a></li>
     <li>
       <span>Forms</span>
       <ul>
@@ -55,20 +54,12 @@ function getPath($path) {
       </ul>
     </li>
     <li>
-      <span>test</span>
+      <span>Loops</span>
       <ul>
-        <li>
-          <span>test</span>
-          <ul>
-            <li>
-              <span>test</span>
-              <ul>
-                <li><a href="<?=getPath("test/test/test/test.php")?>">Test</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+        <li><a href="<?=getPath("loops/do-while.php")?>">Do While</a></li>
+        <li><a href="<?=getPath("loops/for.php")?>">For</a></li>
       </ul>
     </li>
+    <li><a href="<?=getPath("sessions")?>">Sessions</a></li>
   </ul>
 </nav>
