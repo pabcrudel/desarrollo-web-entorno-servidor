@@ -27,9 +27,9 @@ function getPath($path) {
 <h4 id="title">Index</h4>
 <nav>
   <ul>
-    <li><a href="<?=getPath("")?>">Home</a></li>
+    <li><a href="<?=getPath("index.php")?>">Home</a></li>
     <li>
-      <a href="<?=getPath("variables")?>">Variables</a>
+      <a href="<?=getPath("variables/index.php")?>">Variables</a>
       <ul>
         <li>
           <a href="<?=getPath("variables/constants.php")?>">Constants</a>
@@ -60,6 +60,6 @@ function getPath($path) {
         <li><a href="<?=getPath("loops/for.php")?>">For</a></li>
       </ul>
     </li>
-    <li><a href="<?=getPath("sessions")?>">Sessions</a></li>
+    <li><a href="<?=getPath("sessions/index.php")?>">Sessions</a></li>
   </ul>
 </nav>
