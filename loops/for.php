@@ -7,13 +7,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?=$title?></title>
-  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="../assets/style/main.css">
 </head>
 <body>
   <header>
     <?php
       $file = __FILE__;
-      require 'nav.php';
+      require '../nav.php';
     ?>
   </header>
 
